@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Program Selector</title>
+
+<!-- W3Schools CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+    body {
+        background-color: #f1f1f1;
+    }
+
+    .program-section {
+        display: none;
+    }
+
+    .program-card {
+        border-radius: 12px;
+    }
+
+    pre{font-size:10px;}
+
+    #output{color:#fff;background-color:#000;}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="w3-container w3-blue w3-center w3-padding">
+    <h3>Program Selection</h3>
+</div>
+
+<!-- Select Program -->
+<div class="w3-container w3-padding">
+    <label class="w3-text-grey"><b>Select Program</b></label>
+    <select class="w3-select w3-border w3-round" onchange="showProgram(this.value)">
+        <option value="" disabled selected>Choose Program</option>
+        <option value="1">Program 1</option>
+        <option value="2">Program 2</option>
+        <option value="3">Program 3</option>
+        <option value="4">Program 4</option>
+        <option value="5">Program 5</option>
+        <option value="6">Program 6</option>
+        <option value="7">Program 7</option>
+        <option value="8">Program 8</option>
+        <option value="9">Program 9</option>
+        <option value="10">Program 10</option>
+        <option value="11">Program 11</option>
+        <option value="12">Program 12</option>
+        <option value="13">Program 13</option>
+        <option value="14">Program 14</option>
+        <option value="15">Program 15</option>
+    </select>
+</div>
+
+<!-- Program Sections -->
+<div class="w3-container">
+
+<!-- Repeat structure for all programs -->
+<div id="program1" class="program-section w3-card w3-white w3-padding program-card">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Program 1 - Python</title>
+
+<!-- W3.CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+    body {
+        background-color: #f2f2f2;
+    }
+    .card {
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+    pre {
+        white-space: pre-wrap;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="w3-container w3-blue w3-center w3-padding">
+    <h3>Program 1</h3>
+</div>
+
+<!-- Program Description -->
+<div class="w3-container w3-padding">
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Aim</h4>
+        <p>
+            Write a Python program that displays the following information:
+            Your name, full address, mobile number, college name, and course subject.
+        </p>
+    </div>
+<div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the program.</li>
+            <li>Declare and assign a variable for the name.</li>
+            <li>Declare and assign a variable for the address.</li>
+            <li>Declare and assign a variable for the mobile number.</li>
+            <li>Declare and assign variables for the college name and course.</li>
+            <li>Display all the stored details using <b>print()</b> statements.</li>
+            <li>End the program.</li>
+        </ol>
+    </div>
+    <!-- Python Program -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Python Program</h4>
+        <pre class="w3-light-grey w3-padding">
+name = "AlexPandian"
+address = "G.N. Mills Post, Coimbatore, Tamil Nadu"
+mobile_no = 123456789
+college_name = "Kongunadu Arts and Science College"
+course = "Python"
+
+print("Name:", name, type(name))
+print("Address:", address, type(address))
+print("Mobile No:", mobile_no, type(mobile_no))
+print("College Name:", college_name, type(college_name))
+print("Course:", course, type(course))
+        </pre>
+    </div>
+<div class="w3-card w3-white w3-padding card">
+    <h4 class="w3-text-blue">Output</h4>
+
+    <div class="w3-light-grey w3-padding w3-round">
+        <pre id="output">
+Name: AlexPandian &lt;class 'str'&gt;
+Address: G.N. Mills Post, Coimbatore, Tamil Nadu &lt;class 'str'&gt;
+Mobile No: 123456789 &lt;class 'int'&gt;
+College Name: Kongunadu Arts and Science College &lt;class 'str'&gt;
+Course: Python &lt;class 'str'&gt;
+        </pre>
+    </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+<div id="program2" class="program-section w3-card w3-white w3-padding program-card">
+
+  <div class="w3-container w3-blue w3-center w3-padding">
+    <h3>Program 2</h3>
+</div>
+
+
+    <!-- Aim -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Aim</h4>
+        <p>
+            Write a Python program to find the largest among three integers
+            using <b>if-else</b> and <b>conditional (ternary) operator</b>.
+        </p>
+    </div>
+
+    <!-- Algorithm -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the program.</li>
+            <li>Enter the first number (a).</li>
+            <li>Enter the second number (b).</li>
+            <li>Enter the third number (c).</li>
+            <li>
+                Find the largest number using if-elif-else:
+                <ul>
+                    <li>If a ≥ b and a ≥ c, largest = a</li>
+                    <li>Else if b ≥ a and b ≥ c, largest = b</li>
+                    <li>Else, largest = c</li>
+                </ul>
+            </li>
+            <li>Find the largest number again using the conditional operator.</li>
+            <li>Print the largest number and end the program.</li>
+        </ol>
+    </div>
+
+    <!-- Python Program -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Python Program</h4>
+
+        <pre class="w3-light-grey w3-padding">
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a >= b and a >= c:
+    largest = a
+elif b >= a and b >= c:
+    largest = b
+else:
+    largest = c
+
+print("Largest number is:", largest)
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+largest = a if (a > b and a > c) else (b if b > c else c)
+
+print("Largest number is:", largest)
+        </pre>
+    </div>
+
+    <!-- Output -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Output</h4>
+
+        <div class="w3-light-grey w3-padding w3-round">
+            <pre id="output">
+Enter first number: 10
+Enter second number: 25
+Enter third number: 15
+Largest number is: 25
+            </pre>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="program3" class="program-section w3-card w3-white w3-padding program-card">
+
+    <!-- Header -->
+    <div class="w3-container w3-blue w3-center w3-padding">
+        <h3>Program 3</h3>
+    </div>
+
+    <!-- Aim -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Aim</h4>
+        <p>
+            Write a Python program to find the factorial of a positive integer
+            using a <b>recursive function</b>.
+        </p>
+    </div>
+
+    <!-- Algorithm -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the program.</li>
+            <li>If <b>n</b> is 0 or 1, return 1 (base case).</li>
+            <li>If <b>n</b> is greater than 1, call the function with <b>n - 1</b>.</li>
+            <li>Multiply <b>n</b> with the result of the recursive call.</li>
+            <li>Repeat the process until <b>n</b> becomes 1.</li>
+            <li>Return all multiplied values as recursion unwinds.</li>
+            <li>Display the factorial of the given number.</li>
+            <li>End the program.</li>
+        </ol>
+    </div>
+
+    <!-- Python Program -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Python Program</h4>
+
+        <pre class="w3-light-grey w3-padding">
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+num = int(input("Enter a positive integer: "))
+print("Factorial of", num, "is:", factorial(num))
+        </pre>
+    </div>
+
+    <!-- Output -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Output</h4>
+
+        <div class="w3-black w3-padding w3-round">
+            <pre class="output-box">
+Enter a positive integer: 5
+Factorial of 5 is: 120
+            </pre>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="program4" class="program-section w3-card w3-white w3-padding program-card">
+
+    <!-- Header -->
+    <div class="w3-container w3-blue w3-center w3-padding">
+        <h3>Program 4</h3>
+    </div>
+
+    <!-- Aim -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Aim</h4>
+        <p>
+            Write a Python program to generate the Fibonacci sequence up to a given number
+            using a <b>recursive function</b>.
+        </p>
+    </div>
+
+    <!-- Algorithm -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the program.</li>
+            <li>Read the input number <b>n</b>.</li>
+            <li>Call the recursive function <b>fibonacci_up_to(n, 0, 1)</b>.</li>
+            <li>In the function, check if the current number <b>a</b> is greater than <b>n</b>.</li>
+            <li>If <b>a &gt; n</b>, return an empty list.</li>
+            <li>Otherwise, add <b>a</b> to the list and call the function with <b>b</b> and <b>a + b</b>.</li>
+            <li>Continue this process until all Fibonacci numbers up to <b>n</b> are generated.</li>
+            <li>Print the final Fibonacci sequence.</li>
+            <li>End the program.</li>
+        </ol>
+    </div>
+
+    <!-- Python Program -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Python Program</h4>
+        <pre class="w3-light-grey w3-padding">
+def fibonacci_up_to(n, a=0, b=1):
+    if a > n:
+        return []
+    return [a] + fibonacci_up_to(n, b, a + b)
+
+n = int(input("Enter a number: "))
+fib_sequence = fibonacci_up_to(n)
+
+print("Fibonacci sequence up to", n, "is:")
+print(fib_sequence)
+        </pre>
+    </div>
+
+    <!-- Output -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Output</h4>
+        <div class="w3-black w3-padding w3-round">
+            <pre class="output">
+Enter a number: 20
+Fibonacci sequence up to 20 is:
+[0, 1, 1, 2, 3, 5, 8, 13, 21]
+            </pre>
+        </div>
+    </div>
+
+</div>
+
+<div id="program5" class="program-section w3-card w3-white w3-padding program-card">
+
+    <!-- Header -->
+    <div class="w3-container w3-blue w3-center w3-padding">
+        <h3>Program 5</h3>
+    </div>
+
+    <!-- Aim -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Aim</h4>
+        <p>
+            Write a Python program that generates a series of unique random numbers from 1 to n,
+            writes them to a file, and displays them.
+        </p>
+    </div>
+
+    <!-- Algorithm -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the program.</li>
+            <li>Read the value of <b>n</b> from the user.</li>
+            <li>Create a list of numbers from 1 to n.</li>
+            <li>Shuffle the list to generate a random order.</li>
+            <li>Open a file named <b>"unique_random_numbers.txt"</b> in write mode.</li>
+            <li>Write all the shuffled numbers into the file.</li>
+            <li>Close the file.</li>
+            <li>Open the same file in read mode and display all the numbers.</li>
+            <li>Stop the program.</li>
+        </ol>
+    </div>
+
+    <!-- Python Program -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Python Program</h4>
+        <pre class="w3-light-grey w3-padding">
+import random
+
+n = int(input("How many unique random numbers do you want to generate? "))
+
+filename = "unique_random_numbers.txt"
+
+numbers = list(range(1, n + 1))
+random.shuffle(numbers)
+
+with open(filename, "w") as file:
+    for num in numbers:
+        file.write(str(num) + "\n")
+
+print(f"{n} unique random numbers written to {filename}.")
+
+print("\nNumbers in the file:")
+with open(filename, "r") as file:
+    for line in file:
+        print(line.strip())
+        </pre>
+    </div>
+
+    <!-- Output -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Output</h4>
+        <div class="w3-black w3-padding w3-round">
+            <pre class="output">
+How many unique random numbers do you want to generate? 10
+10 unique random numbers written to unique_random_numbers.txt.
+
+Numbers in the file:
+7
+2
+9
+1
+5
+3
+10
+6
+4
+8
+            </pre>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="program6" class="program-section w3-card w3-white w3-padding program-card">
+
+    <!-- Header -->
+    <div class="w3-container w3-blue w3-center w3-padding">
+        <h3>Program 6</h3>
+    </div>
+
+    <!-- Part (i) - LED Switch -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Part (i): Switching LED On/Off</h4>
+
+        <!-- Aim -->
+        <p>Aim: Write a Python program to switch an LED on/off using a microcontroller (Wokwi simulation).</p>
+
+        <!-- Algorithm -->
+        <div class="w3-card w3-light-grey w3-padding card">
+            <h5>Algorithm</h5>
+            <ol class="w3-padding-left">
+                <li>Start the process.</li>
+                <li>Open <b>wokwi.com</b>.</li>
+                <li>Create a new project in MicroPython template on any microcontroller.</li>
+                <li>Write the Python program in <b>main.py</b>.</li>
+                <li>Write JSON codes in <b>diagram.json</b> or integrate components manually.</li>
+                <li>Save and run the project.</li>
+                <li>End the process.</li>
+            </ol>
+        </div>
+
+        <!-- Python Program -->
+        <div class="w3-card w3-white w3-padding card">
+            <h5>main.py</h5>
+            <pre class="w3-light-grey w3-padding">
+import machine
+
+led = machine.Pin(15, machine.Pin.OUT)
+
+while True:
+    user_input = input("Enter 'on' to turn LED on, 'off' or 'quit' to stop: ").strip().lower()
+
+    if user_input == 'on':
+        led.value(1)
+        print("LED is ON")
+
+    elif user_input == 'off':
+        led.value(0)
+        print("LED is OFF")
+
+    elif user_input == 'quit':
+        print("Exiting the program.")
+        break
+
+    else:
+        print("Invalid input!")
+            </pre>
+        </div>
+
+        <!-- diagram.json -->
+        <div class="w3-card w3-white w3-padding card">
+            <h5>diagram.json</h5>
+            <pre class="w3-light-grey w3-padding">
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led", "top": -32.4, "left": -82.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP15", "led:A", "green", [] ],
+    [ "pico:GND.1", "led:C", "black", [] ]
+  ],
+  "dependencies": {}
+}
+            </pre>
+        </div>
+ <div class="w3-card w3-white w3-padding card">
+          <img src="6.1.png" width="100%">
+        </div>
+    </div>
+
+    <!-- Part (ii) - Blinking LED -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Part (ii): Blinking LED</h4>
+
+        <!-- Aim -->
+        <p>Aim: Write a Python program to blink an LED continuously using a microcontroller (Wokwi simulation).</p>
+
+        <!-- Algorithm -->
+        <div class="w3-card w3-light-grey w3-padding card">
+            <h5>Algorithm</h5>
+            <ol class="w3-padding-left">
+                <li>Start the process.</li>
+                <li>Open <b>wokwi.com</b>.</li>
+                <li>Create a new project in MicroPython template on any microcontroller.</li>
+                <li>Write the Python program in <b>main.py</b>.</li>
+                <li>Write JSON codes in <b>diagram.json</b> or integrate components manually.</li>
+                <li>Save and run the project.</li>
+                <li>End the process.</li>
+            </ol>
+        </div>
+
+        <!-- Python Program -->
+        <div class="w3-card w3-white w3-padding card">
+            <h5>main.py</h5>
+            <pre class="w3-light-grey w3-padding">
+import machine as gpio
+import utime as tm
+
+led = gpio.Pin(6, gpio.Pin.OUT)
+
+while True:
+    led.toggle()
+    tm.sleep(2)
+            </pre>
+        </div>
+
+        <!-- diagram.json -->
+        <div class="w3-card w3-white w3-padding card">
+            <h5>diagram.json</h5>
+            <pre class="w3-light-grey w3-padding">
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led", "top": 6, "left": -73, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP6", "led:A", "green", [] ],
+    [ "pico:GND.3", "led:C", "black", [ "h-63.6", "v-79.95" ] ]
+  ],
+  "dependencies": {}
+}
+            </pre>
+        </div>
+<div class="w3-card w3-white w3-padding card">
+          <img src="6.2.png" width="100%">
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Program 7 Section -->
+<div id="program7" class="program-section w3-card w3-white w3-padding program-card">
+
+    <!-- Header -->
+    <div class="w3-container w3-blue w3-center w3-padding">
+        <h3>Program 7</h3>
+    </div>
+
+    <!-- Aim -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Aim</h4>
+        <p>
+            Write a Python program to read temperature and humidity from a DHT22 sensor 
+            using a microcontroller (Wokwi simulation), control LEDs based on temperature, 
+            and optionally publish data to an MQTT broker.
+        </p>
+    </div>
+
+    <!-- Algorithm -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the process.</li>
+            <li>Open <b>wokwi.com</b>.</li>
+            <li>Create a new project in MicroPython template on a microcontroller (e.g., Raspberry Pi Pico).</li>
+            <li>Write the Python program in <b>main.py</b>.</li>
+            <li>Write JSON codes in <b>diagram.json</b> or integrate components manually.</li>
+            <li>Save and run the project.</li>
+            <li>End the process.</li>
+        </ol>
+    </div>
+
+    <!-- Python Code -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Python Program (main.py)</h4>
+        <pre class="w3-light-grey w3-padding">
+from machine import Pin
+from time import sleep
+import dht
+
+# Initialize components
+dht_sensor = dht.DHT22(Pin(16))
+Red, Green = Pin(18, Pin.OUT), Pin(20, Pin.OUT)
+
+while True:
+    dht_sensor.measure()
+    temp = dht_sensor.temperature()
+    hum = dht_sensor.humidity()  # Read humidity
+
+    # Control LEDs based on temperature
+    Red.value(temp > 30)
+    Green.value(temp <= 30)
+
+    # Print temperature and humidity
+    print(f"Temp: {temp}°C, Humidity: {hum}%")
+
+    sleep(1)
+        </pre>
+    </div>
+
+    <!-- diagram.json -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Wokwi Diagram (diagram.json)</h4>
+        <pre class="w3-light-grey w3-padding">
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -120, "left": 160, "attrs": {} },
+    { "type": "wokwi-led", "id": "redLed", "top": 82.8, "left": 224.6, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-led", "id": "greenLed", "top": 82.8, "left": 186.2, "attrs": { "flip": "" } }
+  ],
+  "connections": [
+    [ "pico:GP16", "dht1:SDA", "green", [] ],
+    [ "pico:3V3", "dht1:VCC", "red", [] ],
+    [ "pico:GND.1", "dht1:GND", "black", [] ],
+    [ "pico:GP18", "redLed:A", "red", [] ],
+    [ "pico:GND.2", "redLed:C", "black", [] ],
+    [ "pico:GP20", "greenLed:A", "green", [] ],
+    [ "pico:GND.3", "greenLed:C", "black", [] ]
+  ],
+  "dependencies": {}
+}
+        </pre>
+    </div>
+
+    <!-- Output Placeholder -->
+    <div class="w3-card w3-white w3-padding card">
+        <img src="7.png" width="100%">
+    </div>
+
+</div>
+
+
+
+<!-- Program 8 Section -->
+<div id="program8" class="program-section w3-card w3-white w3-padding program-card">
+
+    <!-- Header -->
+    <div class="w3-container w3-blue w3-center w3-padding">
+        <h3>Program 8 - Send Sensor Data to Smartphone via Bluetooth</h3>
+    </div>
+
+    <!-- Aim -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Aim</h4>
+        <p>
+            Write a Python program to read data from a sensor using a microcontroller and 
+            send it to a smartphone via Bluetooth (Wokwi simulation).
+        </p>
+    </div>
+
+    <!-- Algorithm -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the process.</li>
+            <li>Open <b>wokwi.com</b>.</li>
+            <li>Create a new project in MicroPython template on a microcontroller (Raspberry Pi Pico W recommended).</li>
+            <li>Write the Python program in <b>main.py</b>.</li>
+            <li>Write JSON codes in <b>diagram.json</b> or integrate components manually.</li>
+            <li>Save and run the project.</li>
+            <li>End the process.</li>
+        </ol>
+    </div>
+
+    <!-- Python Code -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Python Program (main.py)</h4>
+        <pre class="w3-light-grey w3-padding">
+from machine import ADC
+import time
+
+# Sensor on ADC pin (GP26)
+sensor = ADC(26)
+
+print("Bluetooth Sensor Program Started")
+print("Advertising Bluetooth...")
+
+while True:
+    value = sensor.read_u16()
+    
+    print("Sending to Smartphone:")
+    print("Sensor Value =", value)
+    print("----------------------")
+    time.sleep(2)
+        </pre>
+    </div>
+
+    <!-- diagram.json -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Wokwi Diagram (diagram.json)</h4>
+        <pre class="w3-light-grey w3-padding">
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico-w", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -87.7, "left": 38.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "pot1:VCC", "pico:3V3", "red", [] ],
+    [ "pot1:GND", "pico:GND.1", "black", [] ],
+    [ "pot1:SIG", "pico:GP26", "green", [] ]
+  ],
+  "dependencies": {}
+}
+        </pre>
+    </div>
+
+    <!-- Output Placeholder -->
+    <div class="w3-card w3-white w3-padding card">
+       <img src="8.png" width="100%">
+    </div>
+
+</div>
+
+
+<!-- Program 9 Section -->
+<div id="program9" class="program-section w3-card w3-white w3-padding program-card">
+
+    <!-- Header -->
+    <div class="w3-container w3-blue w3-center w3-padding">
+        <h3>Program 9 - Send E-mail on Switch Press</h3>
+    </div>
+
+    <!-- Aim -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Aim</h4>
+        <p>
+            Write a Python program to send an E-mail when a button/switch is pressed 
+            using a microcontroller (Raspberry Pi Pico simulation in Wokwi).
+        </p>
+    </div>
+
+    <!-- Algorithm -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the process.</li>
+            <li>Open <b>wokwi.com</b>.</li>
+            <li>Create a new project in MicroPython template on a microcontroller (Raspberry Pi Pico recommended).</li>
+            <li>Write the Python program in <b>main.py</b>.</li>
+            <li>Write JSON codes in <b>diagram.json</b> or integrate components manually.</li>
+            <li>Save and run the project.</li>
+            <li>End the process.</li>
+        </ol>
+    </div>
+
+    <!-- Python Code -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Python Program (main.py)</h4>
+        <pre class="w3-light-grey w3-padding">
+from machine import Pin
+import time
+
+# Button connected to GP15
+button = Pin(15, Pin.IN, Pin.PULL_UP)
+
+print("📧 Email Sending Simulation Started (Pico)")
+
+def send_email():
+    print("Connecting to network...")
+    time.sleep(1)
+    print("Sending email...")
+    time.sleep(1)
+    print("✅ Email sent successfully!")
+
+while True:
+    if button.value() == 0:   # Button pressed
+        print("🔘 Button Pressed")
+        send_email()
+        time.sleep(2)        # debounce delay
+    time.sleep(0.1)
+        </pre>
+    </div>
+
+    <!-- diagram.json -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Wokwi Diagram (diagram.json)</h4>
+        <pre class="w3-light-grey w3-padding">
+{
+  "version": 1,
+  "author": "221IT017 G. Dharsan",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 67.3,
+      "left": -108.9,
+      "rotate": 270,
+      "attrs": { "color": "green", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "btn1:1.r", "pico:GP15", "green", [ "v-29", "h48", "v166.35" ] ],
+    [ "btn1:2.r", "pico:GND.1", "black", [ "v-57.8", "h38.6", "v31.95" ] ]
+  ],
+  "dependencies": {}
+}
+        </pre>
+    </div>
+
+    <!-- Output Placeholder -->
+    <div class="w3-card w3-white w3-padding card">
+      <img src="9.png" width="100%">
+    </div>
+
+</div>
+
+
+
+
+<!-- Program 10 Section -->
+<div id="program10" class="program-section w3-card w3-white w3-padding program-card">
+
+    <!-- Header -->
+    <div class="w3-container w3-blue w3-center w3-padding">
+        <h3>Program 10 - Control LED with Switch</h3>
+    </div>
+
+    <!-- Aim -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Aim</h4>
+        <p>
+            Interface an LED and a switch with a microcontroller (Raspberry Pi Pico) and write a Python program to control the LED using the switch.
+        </p>
+    </div>
+
+    <!-- Algorithm -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the process.</li>
+            <li>Open <b>wokwi.com</b>.</li>
+            <li>Create a new project in MicroPython template for the microcontroller.</li>
+            <li>Write the Python program in <b>main.py</b> to read the switch and control the LED.</li>
+            <li>Write JSON codes in <b>diagram.json</b> or integrate components manually.</li>
+            <li>Save and run the project.</li>
+            <li>End the process.</li>
+        </ol>
+    </div>
+
+    <!-- Python Code -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Python Program (main.py)</h4>
+        <pre class="w3-light-grey w3-padding">
+import machine
+import time
+
+LED_PIN = 0
+BUTTON_PIN = 14
+
+led = machine.Pin(LED_PIN, machine.Pin.OUT)
+button = machine.Pin(BUTTON_PIN, machine.Pin.IN, machine.Pin.PULL_UP)
+
+while True:
+    if not button.value():
+        led.on()
+        print("LED ON")
+        time.sleep(0.5)
+    else:
+        led.off()
+        print("LED OFF")
+        time.sleep(0.5)
+        </pre>
+    </div>
+
+    <!-- diagram.json -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-blue">Wokwi Diagram (diagram.json)</h4>
+        <pre class="w3-light-grey w3-padding">
+{
+  "version": 1,
+  "author": "221IT047 M.M. Monish",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": -3.15, "left": 22.8, "attrs": { "env": "micropython-20231227-v1.22.0" } },
+    { "type": "wokwi-led", "id": "led1", "top": -61.2, "left": -82.6, "attrs": { "color": "red", "flip": "" } },
+    { "type": "wokwi-pushbutton", "id": "btn1", "top": 118.6, "left": -95.8, "rotate": 180, "attrs": { "color": "green" } }
+  ],
+  "connections": [
+    [ "led1:A", "pico:GP0", "green", [ "v28.8", "h67.2" ] ],
+    [ "pico:GND.1", "led1:C", "black", [ "h0" ] ],
+    [ "pico:GND.4", "btn1:1.r", "black", [ "h-134.4", "v-19.2" ] ],
+    [ "pico:GP9", "btn1:2.r", "green", [ "h-144", "v19.4" ] ],
+    [ "pico:GP9", "pico:GP14", "green", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
+        </pre>
+    </div>
+
+    <!-- Output Placeholder -->
+    <div class="w3-card w3-white w3-padding card">
+   <img src="10.png" width="100%">
+    </div>
+
+</div>
+
+
+
+<!-- Program 11 Section -->
+<div id="program11" class="program-section w3-card w3-white w3-padding program-card">
+
+    <!-- Header -->
+    <div class="w3-container w3-indigo w3-center w3-padding">
+        <h3>Program 11 - TCP Server for Humidity Data</h3>
+    </div>
+
+    <!-- Aim -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-indigo">Aim</h4>
+        <p>
+            Create a TCP server on a microcontroller (e.g., Raspberry Pi Pico) that responds with humidity data from a DHT22 sensor when requested by a TCP client.
+        </p>
+    </div>
+
+    <!-- Algorithm -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-indigo">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the process.</li>
+            <li>Open <b>wokwi.com</b>.</li>
+            <li>Create a new project in MicroPython template for the microcontroller.</li>
+            <li>Connect DHT22 sensor to a GPIO pin.</li>
+            <li>Write Python code in <b>main.py</b> to implement TCP server.</li>
+            <li>Save and run the project.</li>
+            <li>End the process.</li>
+        </ol>
+    </div>
+
+    <!-- Python Code -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-indigo">Python Program (main.py)</h4>
+        <pre class="w3-light-grey w3-padding">
+from machine import Pin
+import dht
+from time import sleep
+
+# DHT22 sensor on GPIO16
+sensor = dht.DHT22(Pin(16))
+
+print("Server Ready")
+print("Send HUM to get humidity")
+
+while True:
+    cmd = input().strip()
+
+    if cmd.upper() == "HUM":
+        sensor.measure()
+        hum = sensor.humidity()
+        print("Humidity:", hum, "%")
+    else:
+        print("Invalid Request")
+        </pre>
+    </div>
+
+    <!-- diagram.json -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-indigo">Wokwi Diagram (diagram.json)</h4>
+        <pre class="w3-light-grey w3-padding">
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": -31.95, "left": -15.6, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht", "top": -95.7, "left": 109.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP16", "dht:SDA", "green", [] ],
+    [ "pico:3V3", "dht:VCC", "red", [] ],
+    [ "pico:GND.1", "dht:GND", "black", [ "h-48", "v67.2", "h211.2" ] ]
+  ],
+  "dependencies": {}
+}
+        </pre>
+    </div>
+
+    <!-- Output Placeholder -->
+    <div class="w3-card w3-white w3-padding card">
+      <img src="11.png" width="100%">
+    </div>
+
+</div>
+
+
+<!-- Program 12 Section -->
+<div id="program12" class="program-section w3-card w3-white w3-padding program-card">
+
+    <!-- Header -->
+    <div class="w3-container w3-teal w3-center w3-padding">
+        <h3>Program 12 - Motor Control Using Relay</h3>
+    </div>
+
+    <!-- Aim -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-teal">Aim</h4>
+        <p>
+            To interface a motor using a relay with a microcontroller and write a Python
+            program to turn ON the motor when a push button is pressed.
+        </p>
+    </div>
+
+    <!-- Algorithm -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-teal">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the process.</li>
+            <li>Open <b>wokwi.com</b>.</li>
+            <li>Create a new MicroPython project using any microcontroller.</li>
+            <li>Interface the push button, relay module, and motor.</li>
+            <li>Write the Python program in <b>main.py</b>.</li>
+            <li>Configure PWM to control the motor via relay.</li>
+            <li>Save and run the simulation.</li>
+            <li>End the process.</li>
+        </ol>
+    </div>
+
+    <!-- Python Program -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-teal">Python Program (main.py)</h4>
+        <pre class="w3-light-grey w3-padding">
+from machine import Pin, PWM
+import time
+
+# create PWM object on GPIO 18
+servo = PWM(Pin(18))
+
+# set PWM frequency to 50Hz
+servo.freq(50)
+
+def set_angle(angle):
+    # convert angle (0-180) to duty cycle
+    duty = int(1000 + (angle / 360) * 8000)
+    servo.duty_u16(duty)
+
+while True:
+    for angle in range(0, 270, 5):
+        set_angle(angle)
+        time.sleep(0.05)
+
+    for angle in range(270, -1, -5):
+        set_angle(angle)
+        time.sleep(0.05)
+        </pre>
+    </div>
+
+    <!-- diagram.json -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-teal">Wokwi Diagram (diagram.json)</h4>
+        <pre class="w3-light-grey w3-padding">
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 25.65,
+      "left": -159.6,
+      "attrs": { "env": "micropython-20241129-v1.24.1" }
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": -50, "left": 28.8, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 102.2,
+      "left": -48,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 57.8, "left": 76.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP18", "btn1:2.l", "yellow", [] ],
+    [ "btn1:1.r", "servo1:PWM", "yellow", [] ],
+    [ "relay1:GND", "pico:GND.8", "black", [] ],
+    [ "pico:GND.8", "servo1:GND", "black", [] ],
+    [ "servo1:V+", "relay1:VCC", "red", [] ]
+  ],
+  "dependencies": {}
+}
+        </pre>
+    </div>
+
+    <!-- Output -->
+    <div class="w3-card w3-white w3-padding card">
+       <img src="12.png" width="100%">
+    </div>
+
+</div>
+
+
+<!-- Program 13 Section -->
+<div id="program13" class="program-section w3-card w3-white w3-padding program-card">
+
+    <!-- Header -->
+    <div class="w3-container w3-red w3-center w3-padding">
+        <h3>Program 13 - Intrusion Detection System</h3>
+    </div>
+
+    <!-- Aim -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-red">Aim</h4>
+        <p>
+            To implement an intrusion detection system using a PIR motion sensor
+            on a microcontroller that detects motion and turns ON an LED.
+        </p>
+    </div>
+
+    <!-- Algorithm -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-red">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the process.</li>
+            <li>Open <b>wokwi.com</b>.</li>
+            <li>Create a new MicroPython project using any microcontroller.</li>
+            <li>Interface PIR motion sensor and LED.</li>
+            <li>Write the Python code in <b>main.py</b>.</li>
+            <li>Read PIR sensor output continuously.</li>
+            <li>If motion is detected, turn ON the LED.</li>
+            <li>If no motion is detected, turn OFF the LED.</li>
+            <li>Repeat the process continuously.</li>
+            <li>End the process.</li>
+        </ol>
+    </div>
+
+    <!-- Python Program -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-red">Python Program (main.py)</h4>
+        <pre class="w3-light-grey w3-padding">
+import machine
+import utime
+
+sensor = machine.Pin(2, machine.Pin.IN)
+led = machine.Pin(9, machine.Pin.OUT)
+
+def read_pir():
+    output = sensor.value()
+    if output == 1:
+        print("PIR sensor detected an object")
+        led.value(1)
+    else:
+        print("PIR sensor did not detected an object")
+        led.value(0)
+
+while True:
+    read_pir()
+    utime.sleep(4)
+        </pre>
+    </div>
+
+    <!-- diagram.json -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-red">Wokwi Diagram (diagram.json)</h4>
+        <pre class="w3-light-grey w3-padding">
+{
+  "version": 1,
+  "author": "221IT047 M.M. Monish",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 25.65,
+      "left": 61.2,
+      "attrs": { "env": "micropython-20231227-v1.22.0" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 174.4,
+      "left": 13.8,
+      "rotate": 180,
+      "attrs": { "color": "red", "flip": "" }
+    },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir1", "top": -53.6, "left": -45.78, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GND.1", "pir1:GND", "black", [] ],
+    [ "pico:GP2", "pir1:OUT", "green", [] ],
+    [ "pico:3V3", "pir1:VCC", "red", [] ],
+    [ "led1:C", "pico:GND.3", "black", [] ],
+    [ "led1:A", "pico:GP9", "green", [] ]
+  ],
+  "dependencies": {}
+}
+        </pre>
+    </div>
+
+    <!-- Output -->
+    <div class="w3-card w3-white w3-padding card">
+        <img src="13.png" width="100%"> 
+    </div>
+
+</div>
+
+<!-- Program 14 Section -->
+<div id="program14" class="program-section w3-card w3-white w3-padding program-card">
+
+    <!-- Header -->
+    <div class="w3-container w3-indigo w3-center w3-padding">
+        <h3>Program 14 - Smart Parking Service</h3>
+    </div>
+
+    <!-- Aim -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-indigo">Aim</h4>
+        <p>
+            To implement a Smart Parking Service using a microcontroller that
+            monitors parking slot availability and displays vacant and occupied spots.
+        </p>
+    </div>
+
+    <!-- Algorithm -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-indigo">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the process.</li>
+            <li>Open <b>wokwi.com</b>.</li>
+            <li>Create a new MicroPython project using any microcontroller.</li>
+            <li>Define the total number of parking spots.</li>
+            <li>Read sensor data to detect whether a spot is occupied or vacant.</li>
+            <li>Update the parking lot status continuously.</li>
+            <li>Display the parking lot status.</li>
+            <li>Find and display the nearest vacant parking spot.</li>
+            <li>Repeat the process at regular intervals.</li>
+            <li>End the process.</li>
+        </ol>
+    </div>
+
+    <!-- Python Program -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-indigo">Python Program (main.py)</h4>
+        <pre class="w3-light-grey w3-padding">
+import random
+import time
+
+NUM_PARKING_SPOTS = 5
+parking_lot = [False] * NUM_PARKING_SPOTS
+
+def read_sensor(spot):
+    return parking_lot[spot]
+
+def update_parking_lot():
+    global parking_lot
+    for i in range(NUM_PARKING_SPOTS):
+        parking_lot[i] = random.choice([True, False])
+
+def display_parking_lot():
+    print("Parking Lot Status:")
+    for i in range(NUM_PARKING_SPOTS):
+        status = "Occupied" if parking_lot[i] else "Vacant"
+        print(f"Spot {i+1}: {status}")
+    print()
+
+def find_vacant_spot():
+    for i in range(NUM_PARKING_SPOTS):
+        if not parking_lot[i]:
+            return i + 1
+    return None
+
+def main():
+    print("Welcome to Smart Parking Service!")
+    while True:
+        update_parking_lot()
+        display_parking_lot()
+        vacant_spot = find_vacant_spot()
+
+        if vacant_spot:
+            print(f"Vacant parking spot available at Spot {vacant_spot}. You can park here!")
+        else:
+            print("Sorry, no vacant spots available.")
+
+        time.sleep(5)
+
+if __name__ == "__main__":
+    main()
+        </pre>
+    </div>
+
+    <!-- diagram.json -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-indigo">Wokwi Diagram (diagram.json)</h4>
+        <pre class="w3-light-grey w3-padding">
+{
+  "version": 1,
+  "author": "221IT046 S. Abinaya",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": { "env": "micropython-20231227-v1.22.0" }
+    },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -84.9, "left": -205.7, "attrs": {} }
+  ],
+  "connections": [
+    [ "ultrasonic1:GND", "pico:GND.1", "black", [] ],
+    [ "ultrasonic1:ECHO", "pico:GP26", "green", [] ],
+    [ "ultrasonic1:TRIG", "pico:GP28", "green", [] ],
+    [ "ultrasonic1:VCC", "pico:GP5", "red", [] ]
+  ],
+  "dependencies": {}
+}
+        </pre>
+    </div>
+
+    <!-- Output -->
+    <div class="w3-card w3-white w3-padding card">
+       <img src="14.png" width="100%">
+    </div>
+
+</div>
+
+<!-- Program 15 Section -->
+<div id="program15" class="program-section w3-card w3-white w3-padding program-card">
+
+    <!-- Header -->
+    <div class="w3-container w3-indigo w3-center w3-padding">
+        <h3>Program 15 </h3>
+    </div>
+
+    <!-- Aim -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-indigo">Aim</h4>
+        <p>
+            To Write a Python program for weather reporting both that tweets weather updates
+to twitter on segment.
+        </p>
+    </div>
+
+    <!-- Algorithm -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-indigo">Algorithm</h4>
+        <ol class="w3-padding-left">
+            <li>Start the process.</li>
+            <li>Open <b>wokwi.com</b>.</li>
+            <li>Create a new MicroPython project using any microcontroller.</li>
+            <li>Define the total number of parking spots.</li>
+            <li>Read sensor data to detect whether a spot is occupied or vacant.</li>
+            <li>Update the parking lot status continuously.</li>
+            <li>Display the parking lot status.</li>
+            <li>Find and display the nearest vacant parking spot.</li>
+            <li>Repeat the process at regular intervals.</li>
+            <li>End the process.</li>
+        </ol>
+    </div>
+
+    <!-- Python Program -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-indigo">Python Program (main.py)</h4>
+        <pre class="w3-light-grey w3-padding">
+from machine import Pin
+import dht
+import time
+
+# -------------------------
+# TM1637 driver (minimal)
+# -------------------------
+class TM1637:
+    def __init__(self, clk, dio):
+        self.clk = Pin(clk, Pin.OUT)
+        self.dio = Pin(dio, Pin.OUT)
+        self.brightness = 0x0f
+
+    def start(self):
+        self.dio.value(1)
+        self.clk.value(1)
+        self.dio.value(0)
+
+    def stop(self):
+        self.clk.value(0)
+        self.dio.value(0)
+        self.clk.value(1)
+        self.dio.value(1)
+
+    def write_byte(self, data):
+        for _ in range(8):
+            self.clk.value(0)
+            self.dio.value(data & 1)
+            data >>= 1
+            self.clk.value(1)
+        self.clk.value(0)
+        self.clk.value(1)
+
+    def show(self, digits):
+        segs = [0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,
+                0x7f,0x6f]
+        self.start()
+        self.write_byte(0x40)
+        self.stop()
+
+        self.start()
+        self.write_byte(0xc0)
+        for d in digits:
+            self.write_byte(segs[d] if d >= 0 else 0x00)
+        self.stop()
+
+        self.start()
+        self.write_byte(0x88 | self.brightness)
+        self.stop()
+
+
+# -------------------------
+# Hardware setup
+# -------------------------
+dht_sensor = dht.DHT22(Pin(15))   # DHT data pin
+display = TM1637(clk=2, dio=3)   # TM1637 pins
+
+# -------------------------
+# Main loop
+# -------------------------
+while True:
+    try:
+        dht_sensor.measure()
+        temp = int(dht_sensor.temperature())
+
+        # Split into digits
+        digits = [
+            temp // 10,
+            temp % 10,
+            -1,
+            -1
+        ]
+
+        display.show(digits)
+        print("Temperature:", temp, "°C")
+
+    except Exception as e:
+        print("Error:", e)
+
+    time.sleep(2)
+        </pre>
+    </div>
+
+    <!-- diagram.json -->
+    <div class="w3-card w3-white w3-padding card">
+        <h4 class="w3-text-indigo">Wokwi Diagram (diagram.json)</h4>
+        <pre class="w3-light-grey w3-padding">
+{
+  "version": 1,
+  "author": "ChatGPT",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": -3.15, "left": 3.6, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -38.1,
+      "left": 148.2,
+      "attrs": { "temperature": "25" }
+    },
+    {
+      "type": "wokwi-tm1637-7segment",
+      "id": "display",
+      "top": 115.16,
+      "left": 103.03,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "pico:GP15", "dht1:SDA", "green", [ "v19.2", "h86.4", "v-124.8", "h76.7" ] ],
+    [ "pico:3V3", "dht1:VCC", "red", [ "h49.2", "v28.8" ] ],
+    [ "pico:GND", "dht1:GND", "black", [] ],
+    [ "pico:GP2", "display:CLK", "blue", [ "h96", "v67.2", "h172.8" ] ],
+    [ "pico:GP3", "display:DIO", "green", [ "h-38.4", "v172.8", "h336", "v-67.2" ] ],
+    [ "pico:3V3", "display:VCC", "red", [ "h39.6", "v48", "h192", "v67.2" ] ],
+    [ "pico:GND", "display:GND", "black", [] ]
+  ],
+  "dependencies": {}
+}
+        </pre>
+    </div>
+
+    <!-- Output -->
+    <div class="w3-card w3-white w3-padding card">
+       <img src="15.png" width="100%">
+    </div>
+
+</div>
+
+
+
+</div>
+
+<!-- JavaScript -->
+<script>
+function showProgram(value) {
+    let sections = document.getElementsByClassName("program-section");
+
+    for (let i = 0; i < sections.length; i++) {
+        sections[i].style.display = "none";
+    }
+
+    if (value) {
+        document.getElementById("program" + value).style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
